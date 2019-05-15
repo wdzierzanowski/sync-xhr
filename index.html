@@ -6,11 +6,14 @@
   </head>
   <body>
 
-  <div id="result"></div>
+  This is me:
+  <pre>
+    <div id="result"></div>
+  </pre>
 
   <script language="javascript">
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/foo.txt', false);
+    xhr.open('GET', '/index.html', false);
     xhr.send();
     document.getElementById('result').textContent = xhr.responseText;
   </script>
